@@ -31,6 +31,7 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/stock-service" />
         <option name="modules">
           <set>
+            <option value="$PROJECT_DIR$/base-domains" />
             <option value="$PROJECT_DIR$/stock-service" />
           </set>
         </option>
