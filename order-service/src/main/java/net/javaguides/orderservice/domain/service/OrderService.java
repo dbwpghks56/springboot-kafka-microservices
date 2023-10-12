@@ -3,6 +3,7 @@ package net.javaguides.orderservice.domain.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.javaguides.basedomains.presentation.dto.event.OrderEvent;
+import net.javaguides.basedomains.presentation.dto.request.OrderRequestDto;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.KafkaHeaders;
@@ -18,8 +19,14 @@ public class OrderService implements OrderCommandUseCase {
     private final KafkaTemplate<String, OrderEvent> kafkaTemplate;
 
     @Override
-    public void sendMessage(OrderEvent orderEvent) {
-        log.info(String.format("Order Event : %s", orderEvent));
+    public void sendMessage(OrderRequestDto orderRequestDto) {
+        log.info(String.format("Order Event : %s", orderRequestDto));
+
+        OrderEvent orderEvent = OrderEvent.builder()
+                .status("PENDING")
+                .message("order status is in pending state")
+                .order(orderRequestDto.toResponseDto())
+                .build();
 
         Message<OrderEvent> message = MessageBuilder
                 .withPayload(orderEvent)
