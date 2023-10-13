@@ -14,6 +14,7 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/email-service" />
         <option name="modules">
           <set>
+            <option value="$PROJECT_DIR$/base-domains" />
             <option value="$PROJECT_DIR$/email-service" />
           </set>
         </option>

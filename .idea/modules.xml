@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-130846508/email-service.base-domains.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-130846508/email-service.base-domains.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/email-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/email-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springboot-kafka-microservices.iml" filepath="$PROJECT_DIR$/.idea/springboot-kafka-microservices.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-130846508/stock-service.base-domains.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-130846508/stock-service.base-domains.main.iml" />
